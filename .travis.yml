@@ -5,5 +5,5 @@ python:
 install:
  - "pip install -r automation/api-tests/requirements.txt"
 before_script: cd automation/api-tests/features
-scripts:
+script:
  - behave
