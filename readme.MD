@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/prfrancaf/desafio-tecnico-qa-aubaypt.svg?branch=master)](https://travis-ci.org/prfrancaf/desafio-tecnico-qa-aubaypt)
 # QA Challenger Aubay Portugal
 
 This repository contains:
