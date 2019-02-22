@@ -15,6 +15,7 @@ class SpontaneousApplicationPage(BasePage):
     AUTORIZE_JOBOPP_CHECK = (By.ID, "AutorizeJobOpp")
     AUTORIZE_POLICY_CHECK = (By.ID, "AutorizePolicy")
     SAVE_BUTTON = (By.ID, "Save")
+    TOAST_MESSAGE_TEXT = (By.CLASS_NAME, "toast-message")
 
     def open_spontaneaus_application(self, base_url):
         url = base_url + self.SPONTANEAUS_APPLICATION_URL
@@ -55,3 +56,6 @@ class SpontaneousApplicationPage(BasePage):
 
     def click_on_save_button(self):
         super().click(self.SAVE_BUTTON)
+
+    def get_toast_message_text(self):
+        return super().find(self.TOAST_MESSAGE_TEXT).text
